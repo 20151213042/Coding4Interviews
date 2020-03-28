@@ -27,4 +27,20 @@ public class Interview_06 {
     return res;
   }
 
+  //使用队列
+  public int[] reversePrint1(ListNode head){
+    int count = 0;
+    ListNode node = head;
+    while(head != null){
+      count++;
+      head = head.next;
+    }
+    node = head;//在第一次遍历时候,链表变成nul,需要重新赋值
+    int[] res = new int[count];
+    for(int i = count-1; i >= 0; i--){
+      res[i] = node.val;
+      node = node.next;
+    }
+    return res;
+  }
 }
