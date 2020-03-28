@@ -8,6 +8,7 @@
  */
 
 public class Interview_04 {
+    //遍历法
     public static boolean findNumberIn2DArray(int[][] matrix, int target) {
         boolean flag = false;
         int row = matrix.length;
